@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.auth1</groupId>
 	<artifactId>auth-learning</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-BETA</version>
 	<name>auth-learning</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -52,15 +52,17 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka -->
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+			<version>2.9.11</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
