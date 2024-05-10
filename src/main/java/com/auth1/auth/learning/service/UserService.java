@@ -121,8 +121,10 @@ public class UserService {
     public ResponseEntity<User> getUserWithEmail(String email) {
         Optional<User> user = userRepository.findByEmail(email);
         if (user.isPresent()) {
+            System.out.println("Yes");
             return ResponseEntity.ok(user.get());
         } else {
+            System.out.println("No");
             return null ;
         }
     }
